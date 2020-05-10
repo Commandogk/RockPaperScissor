@@ -77,7 +77,7 @@
             android:id="@+id/paper"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="130dp"
+            android:layout_marginLeft="100dp"
             android:text="paper"
             android:textColor="#EC4D37"
             android:textSize="30dp" />
@@ -86,7 +86,7 @@
             android:id="@+id/scissor"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="100dp"
             android:text="scissor"
             android:textColor="#EC4D37"
             android:textSize="30dp" />
@@ -109,19 +109,19 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/r"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="143dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="1dp"
         android:layout_toRightOf="@+id/q"
         android:src="@drawable/p" />
 
     <ImageView
+        android:id="@+id/t"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/r"
-        android:layout_marginLeft="173dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="4dp"
         android:layout_toRightOf="@+id/w"
-        android:id="@+id/t"
         android:src="@drawable/sc" />
 
     <Button

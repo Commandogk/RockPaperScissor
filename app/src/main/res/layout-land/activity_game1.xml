@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".game1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="2 - Player"
+        android:id="@+id/xda"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1:"
+        android:textSize="30dp"
+        android:layout_below="@id/xda"
+        android:layout_margin="5dp"
+        android:textColor="#EC4D37"
+        android:id="@+id/pt1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2:"
+        android:textSize="30dp"
+        android:layout_margin="5dp"
+        android:textColor="#EC4D37"
+        android:id="@+id/pt2"
+        android:layout_below="@id/pt1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/xda"
+        android:layout_height="wrap_content"
+        android:text="Round:"
+        android:textSize="30dp"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:textColor="#EC4D37"
+        android:id="@+id/round"
+        android:layout_alignParentRight="true"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pt2"
+        android:orientation="horizontal"
+        android:id="@+id/r"
+        >
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Stone"
+        android:textColor="#EC4D37"
+        android:textSize="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/stone"/>
+
+        <RadioButton
+            android:id="@+id/paper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="130dp"
+            android:text="paper"
+            android:textColor="#EC4D37"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/scissor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="150dp"
+            android:text="scissor"
+            android:textColor="#EC4D37"
+            android:textSize="30dp" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/st" />
+
+    <ImageView
+        android:id="@+id/w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/q"
+        android:src="@drawable/p" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r"
+        android:layout_marginLeft="173dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/w"
+        android:id="@+id/t"
+        android:src="@drawable/sc" />
+
+    <Button
+        android:id="@+id/btr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="160dp"
+
+        android:background="#1D1B1B"
+        android:text="Reset"
+        android:textColor="#EC4D37"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/bts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="183dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toRightOf="@id/btr"
+        android:background="#1D1B1B"
+        android:text="Submit"
+        android:textColor="#EC4D37"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
+</ScrollView>

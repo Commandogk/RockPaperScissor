@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".game2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="1 - Player"
+        android:id="@+id/xd"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:gravity="center"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xd"
+        android:text="Player 1:"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="#EC4D37"
+        android:id="@+id/ptd1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2:"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="#EC4D37"
+        android:id="@+id/ptd2"
+        android:layout_below="@id/ptd1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/xd"
+        android:layout_height="wrap_content"
+        android:text="Round:"
+        android:textSize="30dp"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:textColor="#EC4D37"
+        android:id="@+id/dround"
+        android:layout_alignParentRight="true"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ptd2"
+        android:id="@+id/rd"
+        >
+
+
+        <RadioButton
+            android:id="@+id/gk1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stone"
+            android:textSize="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#EC4D37"/>
+
+        <RadioButton
+            android:id="@+id/gk2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+
+            android:textColor="#EC4D37"
+            android:text="paper"
+            android:layout_marginLeft="20dp" />
+
+        <RadioButton
+            android:id="@+id/gk3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#EC4D37"
+            android:layout_marginLeft="20dp"
+            android:text="scissor"  />
+    </RadioGroup>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rd"
+        android:src="@drawable/st"
+        android:id="@+id/dq"
+        android:layout_below="@id/ptd2"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rd"
+        android:src="@drawable/p"
+        android:layout_below="@id/dq"
+        android:id="@+id/dw"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rd"
+        android:src="@drawable/sc"
+        android:id="@+id/de"
+        android:layout_below="@id/dw"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rd"
+        android:background="#1D1B1B"
+        android:textColor="#EC4D37"
+        android:text="Reset"
+        android:id="@+id/dbtr"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rd"
+        android:background="#1D1B1B"
+        android:textColor="#EC4D37"
+        android:text="Submit"
+        android:id="@+id/dbts"
+        android:layout_toRightOf="@id/dbtr"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"
+        />
+
+
+</RelativeLayout>

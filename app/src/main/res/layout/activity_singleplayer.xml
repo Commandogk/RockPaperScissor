@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".singleplayer">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the Details"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:layout_below="@id/x"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="1 - Player"
+        android:id="@+id/x"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/play1"
+        android:layout_centerVertical="true"
+        android:hint="Enter name of the player"
+        android:textColorHint="#EC4D37"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="#EC4D37"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ab"
+        android:hint="Enter no of rounds"
+        android:inputType="number"
+        android:textColorHint="#EC4D37"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#EC4D37"
+        android:layout_below="@id/play1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/begi"
+        android:layout_below="@id/ab"
+        android:layout_centerHorizontal="true"
+        android:background="#1D1B1B"
+        android:padding="10dp"
+        android:text="Start!"
+        android:textColor="#EC4D37"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rockpaperscissor">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".simple2"></activity>
+        <activity android:name=".simple">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".result" />
+        <activity android:name=".game2" />
+        <activity android:name=".game1" />
+        <activity android:name=".dualplayer" />
+        <activity android:name=".singleplayer" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

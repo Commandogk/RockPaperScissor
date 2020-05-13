@@ -71,6 +71,7 @@
         android:textColor="#EC4D37"
         android:textSize="30dp"
         android:layout_marginLeft="30dp"
+        android:buttonTint="@color/colorPrimary"
         android:id="@+id/stone"/>
 
         <RadioButton
@@ -78,6 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="100dp"
+            android:buttonTint="@color/colorPrimary"
             android:text="paper"
             android:textColor="#EC4D37"
             android:textSize="30dp" />
@@ -86,6 +88,7 @@
             android:id="@+id/scissor"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:buttonTint="@color/colorPrimary"
             android:layout_marginLeft="100dp"
             android:text="scissor"
             android:textColor="#EC4D37"

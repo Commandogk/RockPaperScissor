@@ -55,29 +55,31 @@
         android:id="@+id/dround"
         android:layout_alignParentRight="true"
         />
+
     <RadioGroup
+        android:id="@+id/rd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ptd2"
-        android:orientation="horizontal"
-        android:id="@+id/rd"
-        >
+        android:orientation="horizontal">
 
 
         <RadioButton
+            android:id="@+id/gk1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:buttonTint="@color/colorPrimary"
             android:text="Stone"
             android:textColor="#EC4D37"
-            android:textSize="30dp"
-            android:layout_marginLeft="30dp"
-            android:id="@+id/gk1"/>
+            android:textSize="30dp" />
 
         <RadioButton
             android:id="@+id/gk2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="100dp"
+            android:buttonTint="@color/colorPrimary"
             android:text="paper"
             android:textColor="#EC4D37"
             android:textSize="30dp" />
@@ -87,6 +89,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="100dp"
+            android:baselineAligned="false"
+            android:buttonTint="@color/colorPrimary"
             android:text="scissor"
             android:textColor="#EC4D37"
             android:textSize="30dp" />

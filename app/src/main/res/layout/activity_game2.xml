@@ -67,6 +67,7 @@
             android:text="Stone"
             android:textSize="30dp"
             android:padding="10dp"
+            android:buttonTint="@color/colorPrimary"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="20dp"
             android:textColor="#EC4D37"/>
@@ -78,7 +79,7 @@
             android:textSize="30dp"
             android:layout_marginTop="30dp"
             android:padding="10dp"
-
+            android:buttonTint="@color/colorPrimary"
             android:textColor="#EC4D37"
             android:text="paper"
             android:layout_marginLeft="20dp" />
@@ -87,6 +88,7 @@
             android:id="@+id/gk3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
             android:textSize="30dp"
             android:padding="10dp"
             android:layout_marginTop="30dp"

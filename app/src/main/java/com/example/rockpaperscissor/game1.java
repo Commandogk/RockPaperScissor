@@ -22,8 +22,9 @@ public class game1 extends AppCompatActivity {
     TextView T1,T2,T3;
     Vibrator vibrator ;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        int display_mode = getResources().getConfiguration().orientation;
         setContentView(R.layout.activity_game1);
         vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
         choices = findViewById(R.id.r);
@@ -59,6 +60,7 @@ public class game1 extends AppCompatActivity {
             }
 
             private void win(int turn) {
+
                 if(x<=total&&x!=0)
                 {
                     if(turn%2==0){

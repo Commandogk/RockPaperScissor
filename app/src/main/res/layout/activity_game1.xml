@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
     tools:context=".game1">
     <TextView
@@ -63,15 +64,17 @@
             android:id="@+id/stone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Stone"
-            android:textSize="30dp"
-            android:padding="10dp"
-            android:layout_marginTop="30dp"
             android:layout_marginLeft="20dp"
-            android:textColor="#EC4D37"/>
+            android:layout_marginTop="30dp"
+            android:buttonTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Stone"
+            android:textColor="#EC4D37"
+            android:textSize="30dp" />
 
         <RadioButton
             android:id="@+id/paper"
+            android:buttonTint="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30dp"
@@ -86,6 +89,7 @@
             android:id="@+id/scissor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
             android:textSize="30dp"
             android:padding="10dp"
             android:layout_marginTop="30dp"

@@ -37,6 +37,7 @@ public class singleplayer extends AppCompatActivity {
                     b.putExtra("AB", play_1);
                     b.putExtra("CD", norounds);
                     startActivity(b);
+                    finish();
                 }
             }
         });

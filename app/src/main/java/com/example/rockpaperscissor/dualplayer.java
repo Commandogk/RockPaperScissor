@@ -41,6 +41,7 @@ public class dualplayer extends AppCompatActivity {
                     intent.putExtra("B", player_2);
                     intent.putExtra("C", noofrounds);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

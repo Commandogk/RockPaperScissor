@@ -97,6 +97,7 @@ public class game1 extends AppCompatActivity {
                         Intent y = new Intent(game1.this,simple2.class);
                         y.putExtra("P",winnner);
                         startActivity(y);
+                        finish();
                     }
 
                 }

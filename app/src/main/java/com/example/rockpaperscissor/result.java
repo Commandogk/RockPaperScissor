@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class result extends AppCompatActivity {
      TextView win,result;
      String F;
@@ -66,6 +68,7 @@ public class result extends AppCompatActivity {
                   public void run() {
                       Intent r = new Intent(result.this,MainActivity.class);
                       startActivity(r);
+                      finish();
                   }
               },5000);
 

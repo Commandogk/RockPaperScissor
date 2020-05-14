@@ -19,8 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".result" />
-        <activity android:name=".game2" />
-        <activity android:name=".game1" />
+        <activity android:name=".game2"  android:configChanges="orientation|screenLayout" />
+        <activity android:name=".game1"  android:configChanges="orientation|screenLayout" />
         <activity android:name=".dualplayer" />
         <activity android:name=".singleplayer" />
         <activity android:name=".MainActivity" />

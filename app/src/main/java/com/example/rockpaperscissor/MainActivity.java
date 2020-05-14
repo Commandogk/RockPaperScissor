@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent X = new Intent(MainActivity.this,singleplayer.class);
                 startActivity(X);
+                finish();
             }
         });
         dual.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent V = new Intent(MainActivity.this,dualplayer.class);
                 startActivity(V);
+                finish();
             }
         });
 

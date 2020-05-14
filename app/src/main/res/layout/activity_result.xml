@@ -43,6 +43,7 @@
         app:lottie_autoPlay="true"
         app:lottie_fileName="champion.json"
         app:lottie_loop="false"
+        android:id="@+id/animation"
         android:layout_below="@id/win"
         android:layout_above="@id/v"
 
